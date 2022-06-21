@@ -3,10 +3,10 @@
 
 header{
 
-margin: 10px;          /* Шрифты меню и отступ меню от края */
+margin: 10px;                /* Шрифты меню и отступ меню от края */
 font-family: Cuprum, Arial, sans-serif; 
 }
-.dws-menu *{
+.dws-menu *{                                                      /*  Меню сайта */
 margin-top: 0;
 padding: 0;
 }
@@ -21,7 +21,7 @@ justify-content: center;
 .dws-menu > ul li a{  /* Настройка положения и стиля шрифтов меню */
 display: block;
 background: #none;
-padding: 3px 50px 3px 50px;
+padding: 10px 50px 3px 50px;
 font-size: 18px;
 color: #454547;
 text-decoration: none;
@@ -38,6 +38,37 @@ top: 7px;
 left: 20px;
 font-size: 23px;
 } 
+
+
+.link-bts a{
+color: #4169E1;
+text-decoration: none;
+}
+
+.btn-high a{                                                        /* Кнопка навверх */ 
+display: inline-block;
+color: #252424;
+background: #rgba(0, 0, 0, 0);
+padding: 16px 33px;
+border-radius: 30px;
+letter-spacing: 0.05em;
+font-size: 12px;
+text-transform: uppercase;
+position: relative;          /* Разрешает двигать кнопку */
+bottom: -25px;               /* Двигает кнопку вверх */
+text-decoration: none;       /* Убирает подчёркивание */
+font-family: Cuprum;
+font-size: 25px;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+.btn-high a:hover{
+background-color: #444;
+color: #fff;
+}
 
 
 .center {
@@ -63,7 +94,7 @@ a {
 
 
 footer {
-    padding: 30px 0;
+    padding: 15px 0;
     text-align: center;
     background: #f5f5f5
 }
@@ -91,6 +122,9 @@ td, th {
 background: none; /* Цвет фона ячеек */
  padding: 10px; /* отступ вокруг текста */
 }
+
+ol { width: 900px; margin: auto; } /* Чтобы весь список выравнивался по центру и числа были слева один под другим */
+
 
 
 
@@ -135,6 +169,20 @@ background: none; /* Цвет фона ячеек */
     line-height: 25px;
 }
 
+.top-bar-2 h5 {
+    font-family: cuprum; /* Шрифт */
+    text-align:left; /* Выравнивание по */
+    font-size: 28px; /* Размер текста */
+    text-transform: ; /* св-ва преобразования текста */
+    font-weight: 600; /* Начертание (жир или нет) */
+    color: #000000; /* Цвет текста */
+    line-height:2; /* Медстрочный интервал */
+    padding: 3px 50px 3px 50px;  /* Отступы текста */
+    font-weight: lighter;
+
+
+}
+
 .top-bar p {
     font-size: 15px;
     text-transform: uppercase;
@@ -175,3 +223,59 @@ background: none; /* Цвет фона ячеек */
 }
 
 
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+.social-icons>li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.social-icons a {
+  position: relative;
+  color: #1E90FF;
+  background-color: #eee;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color .3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .25rem;
+    font-size: 30px;
+}
+.social-icons a:hover {
+  background-color: #e0e0e0;
+}
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  left: .65rem;
+  top: .65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+
+
+}
+
+.social-icons .social-icon-fb::before {
+  background-image: url("...");
+}
+.social-icons .social-icon-vk::before {
+  background-image: url("...");
+}
+.social-icons .social-icon-telegram::before {
+  background-image: url("...");
+}
